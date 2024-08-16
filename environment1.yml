@@ -1,0 +1,11 @@
+name: palantir_py3.6
+dependencies:
+  - python=3.6
+  - tensorflow-gpu==1.15
+  - pip:
+    - matplotlib==3.3.4
+    - joypy==0.2.6
+    - seaborn==0.11.2
+    - imageio==2.15.0
+    - opencv-python==4.7.0.68
+
