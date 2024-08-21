@@ -15,9 +15,7 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_6
         /bin/bash ~/anaconda.sh -b -p /opt/conda && \
         rm ~/anaconda.sh && \
         ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh && \
-        echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc
-ADD .condarc /root/.condarc
-RUN	conda clean -i && \
+        echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
         conda update conda && \
         conda update anaconda && \
         conda update --all && \
