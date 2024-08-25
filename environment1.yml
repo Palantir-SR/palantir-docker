@@ -8,4 +8,4 @@ dependencies:
     - seaborn==0.11.2
     - imageio==2.15.0
     - opencv-python==4.7.0.68
-
+    - torch==1.10.2
